@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "651902088087",
+    "project_id": "bookinthelibrary-981a2",
+    "storage_bucket": "bookinthelibrary-981a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651902088087:android:d6ce2e008835efb3e70ad2",
+        "android_client_info": {
+          "package_name": "com.example.bookinthelibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651902088087-7mgm2n3hderv4dmev9im5mo6d0jk1f06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbbR1alHR1967LGA73TgOh1JL0DY7U36s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651902088087-7mgm2n3hderv4dmev9im5mo6d0jk1f06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

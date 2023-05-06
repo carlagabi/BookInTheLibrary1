@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.ktx.Firebase;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
