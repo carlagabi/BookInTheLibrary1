@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".CadastroActivity">
+
+    <Button
+        android:id="@+id/buttonFoto"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="23dp"
+        android:drawableBottom="@drawable/icon_camera"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        app:backgroundTint="#56AFAA"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/containerCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastro"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/containerCadastro"
+        style="@style/ContainerLogin"
+        android:layout_height="320dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCadastro" />
+
+    <ProgressBar
+        android:id="@+id/progressbar2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerCadastro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        style="@style/buttonLogin"
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:text="Entrar"
+        android:textSize="14sp"
+        app:backgroundTint="#56B0AB"
+        app:layout_constraintBottom_toBottomOf="@+id/containerCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/containerCadastro"
+        app:layout_constraintStart_toStartOf="@+id/containerCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/senhaCadastro"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#7257A3"
+        tools:ignore="HardcodedText,UsingOnClickInXml,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/nomeCadastro"
+        style="@style/Edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/icon_nome"
+        android:hint="Nome de Usuário"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/containerCadastro"
+        app:layout_constraintStart_toStartOf="@+id/containerCadastro"
+        app:layout_constraintTop_toTopOf="@+id/containerCadastro"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/emailCadastro"
+        style="@style/Edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/icon_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/containerCadastro"
+        app:layout_constraintStart_toStartOf="@+id/containerCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/nomeCadastro"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/senhaCadastro"
+        style="@style/Edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/icon_senha"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="@+id/containerCadastro"
+        app:layout_constraintStart_toStartOf="@+id/containerCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/emailCadastro"
+        tools:ignore="HardcodedText,NotSibling,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cadastro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgCadastro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastro"
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints"
+        tools:srcCompat="#00FF55" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
