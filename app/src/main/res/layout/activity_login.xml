@@ -2,6 +2,7 @@
 
 <androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -21,7 +22,7 @@
       app:layout_constraintTop_toBottomOf="@+id/iconAppLogin" />
 
   <EditText
-      android:id="@+id/edit_email"
+      android:id="@+id/emailLogin"
       style="@style/Edit_Text"
       android:hint="Email"
       android:drawableRight="@drawable/icon_email"
@@ -31,35 +32,38 @@
       app:layout_constraintTop_toTopOf="@id/containerLogin"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      />
+      tools:ignore="Autofill,HardcodedText,RtlHardcoded,VisualLintTextFieldSize" />
 
   <EditText
-      android:id="@+id/edit_senha"
+      android:id="@+id/senhaLogin"
       style="@style/Edit_Text"
-      android:hint="Senha"
-      android:drawableRight="@drawable/icon_senha"
-      android:inputType="numberPassword"
-      app:layout_constraintStart_toStartOf="@id/containerLogin"
-      app:layout_constraintEnd_toEndOf="@id/containerLogin"
-      app:layout_constraintTop_toBottomOf="@+id/edit_email"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      />
+      android:drawableRight="@drawable/icon_senha"
+      android:hint="Senha"
+      android:inputType="numberPassword"
+      app:layout_constraintEnd_toEndOf="@id/containerLogin"
+      app:layout_constraintStart_toStartOf="@id/containerLogin"
+      app:layout_constraintTop_toBottomOf="@+id/emailLogin"
+      tools:ignore="Autofill,HardcodedText,RtlHardcoded,VisualLintTextFieldSize" />
 
   <Button
-      android:id="@+id/buttonCadastro"
+      android:id="@+id/buttonLogin"
       style="@style/buttonLogin"
       android:layout_width="310dp"
       android:layout_height="70dp"
-      android:layout_marginTop="15dp"
+      android:layout_marginTop="10dp"
       android:onClick="mainactivity"
       android:text="Entrar"
       android:textSize="14sp"
       app:backgroundTint="#56B0AB"
+      app:layout_constraintBottom_toBottomOf="@+id/containerLogin"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/edit_senha"
-      app:rippleColor="#7257A3" />
+      app:layout_constraintTop_toBottomOf="@+id/senhaLogin"
+      app:layout_constraintVertical_bias="0.0"
+      app:rippleColor="#7257A3"
+      tools:ignore="HardcodedText,UsingOnClickInXml,TextContrastCheck" />
 
   <ProgressBar
       android:id="@+id/progressbar"
@@ -79,14 +83,14 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/iconapp" />
+      app:srcCompat="@drawable/iconapp"
+      tools:ignore="ContentDescription,ImageContrastCheck" />
 
   <TextView
-      android:id="@+id/cadastro"
+      android:id="@+id/txtCadastro"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="10dp"
-      android:onClick="cadastrousuario"
       android:text="Cadastre-se"
       android:textSize="16sp"
       android:textStyle="bold"
@@ -94,7 +98,8 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/progressbar"
-      app:layout_constraintVertical_bias="0.0" />
+      app:layout_constraintVertical_bias="0.0"
+      tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

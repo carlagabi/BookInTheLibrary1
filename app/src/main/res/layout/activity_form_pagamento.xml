@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/activity_form_pagamento"
     tools:context=".FormPagamentoActivity">
 
     <EditText
@@ -17,7 +18,8 @@
         android:text="Número do Cartão"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDadosCartão" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDadosCartão"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/cep"
@@ -30,7 +32,8 @@
         android:text="CEP"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cpf" />
+        app:layout_constraintTop_toBottomOf="@+id/cpf"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/txtDadosPessoais"
@@ -52,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:text="Dados do Cartão"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -84,7 +87,8 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/numerocartao"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDadosCartão" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDadosCartão"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/cpf"
@@ -97,7 +101,8 @@
         android:text="CPF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDadosPessoais" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDadosPessoais"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/cvc"
@@ -110,7 +115,8 @@
         android:text="CVC"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numerocartao" />
+        app:layout_constraintTop_toBottomOf="@+id/numerocartao"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/escrevaEmailLogin"
@@ -124,7 +130,8 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/cep"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome" />
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/validade"
@@ -138,7 +145,8 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/cvc"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titularcartao" />
+        app:layout_constraintTop_toBottomOf="@+id/titularcartao"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/nome"
@@ -152,5 +160,6 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/cpf"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDadosPessoais" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDadosPessoais"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
